@@ -94,6 +94,53 @@ void southAmerica() {
   
 }
 
+void eurasia() {
+  //top half of europe/russia/asia
+  matrix.drawLine(12, 1, 11, 1, matrix.Color333(7, 7, 7));
+  matrix.drawLine(12, 2, 11, 2, matrix.Color333(7, 7, 7));
+  matrix.drawLine(19, 1, 17, 1, matrix.Color333(7, 7, 7));
+  matrix.drawLine(28,1, 21, 1, matrix.Color333(7,7,7));
+  matrix.drawLine(15, 2, 14, 2, matrix.Color333(7, 7, 7));
+  matrix.drawLine(29, 2, 18, 2, matrix.Color333(7, 7, 7));
+  matrix.drawLine(28, 3, 16, 3, matrix.Color333(7, 7, 7));
+  matrix.drawLine(16, 4, 14, 4, matrix.Color333(7, 7, 7));
+  matrix.drawLine(19, 4, 18, 4, matrix.Color333(7, 7, 7));
+  matrix.drawLine(28, 4, 21, 4, matrix.Color333(7, 7, 7));
+  matrix.drawPixel(30, 4, matrix.Color333(7, 7, 7));
+  matrix.drawPixel(30,5, matrix.Color333(7, 7, 7));
+  //bottom half
+  matrix.drawLine(15, 5, 14, 5, matrix.Color333(7, 7, 7));
+  matrix.drawLine(28, 5, 19, 5, matrix.Color333(7, 7, 7));
+  matrix.drawLine(25, 6, 19, 6, matrix.Color333(7, 7, 7));
+  matrix.drawLine(28, 6, 27, 6, matrix.Color333(7, 7, 7));
+  matrix.drawLine(22, 7, 21, 7, matrix.Color333(7, 7, 7));
+  matrix.drawLine(28, 7, 27, 7, matrix.Color333(7, 7, 7));
+  matrix.drawLine(29, 10, 28, 10, matrix.Color333(7, 7, 7));
+  matrix.drawPixel(28,8, matrix.Color333(7, 7, 7));
+  matrix.drawPixel(27,9, matrix.Color333(7, 7, 7));
+  matrix.drawPixel(31,8, matrix.Color333(7, 7, 7));
+  matrix.drawPixel(25,7, matrix.Color333(7, 7, 7));
+}
+
+void africa() {
+  matrix.drawLine(18, 6, 15, 6, matrix.Color333(7,7,7));
+  matrix.drawLine(19, 7, 13, 7, matrix.Color333(7,7,7));
+  matrix.drawLine(20, 8, 13, 8, matrix.Color333(7,7,7));
+  matrix.drawLine(20, 9, 15, 9, matrix.Color333(7,7,7));
+  matrix.drawLine(19, 10, 15, 10, matrix.Color333(7,7,7));
+  matrix.drawLine(18, 11, 15, 11, matrix.Color333(7,7,7));
+  matrix.drawLine(18, 12, 15, 12, matrix.Color333(7,7,7));
+  matrix.drawLine(17, 13, 16, 13, matrix.Color333(7,7,7));
+}
+
+void australia() {
+  matrix.drawLine(29, 9, 28, 9, matrix.Color333(7,7,7));
+  matrix.drawLine(28, 11, 26, 11, matrix.Color333(7,7,7));
+  matrix.drawLine(29, 12, 25, 12, matrix.Color333(7,7,7));
+  matrix.drawLine(26, 13, 25, 13, matrix.Color333(7,7,7));
+  matrix.drawLine(29, 13, 28, 13, matrix.Color333(7,7,7));
+}
+
 void loop() {
   // do nothing
   // fix the screen with green+
@@ -123,6 +170,9 @@ void loop() {
   */
   northAmerica();
   southAmerica();
+  eurasia();
+  africa();
+  australia();
  
   /* matrix.setCursor (1, 0);
     matrix.setTextColor(matrix.Color333(0,5,7)); 
